@@ -6,7 +6,7 @@
     --color-dark2: #2d2d2d;
     --color-dark3: #414141;
     --color-orange1: #F4511F;
-    --color-dark4: #1c1c1c;
+    --color-dark4: #161a1b;
     --color-dark5: #343434;
     --color-purple: #b040ff;
 }
@@ -27,11 +27,9 @@ body {
 
     display: grid;
     grid-template-areas: 
-    "header header"
-    "swiper swiper"
-    "aside aside"
-    "footer footer";
-    grid-template-rows: 80px 1fr;
+    "header"
+    "swiper";
+    grid-template-rows: 80px 900px ;
     
 }    
 
@@ -63,15 +61,7 @@ body {
     border-radius: 2em;
 }
 
-.content{
-    /*text-align: center;height: 100vh;*/
-    padding-top: 5em;
-    display: flex;
-    transition: 1s;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 .btn_icon_header{
     display: none;
@@ -90,7 +80,7 @@ body {
         flex-direction: column;
         top: 0;
         background-color: var(--color-dark5);
-        height: 100%;
+        height: 150%;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
@@ -116,17 +106,6 @@ height: 24px;
 
 background: url(logo.png);
 
-}
-
-
-aside {
-    grid-area: aside;
-    background-color: aliceblue;
-}
-
-footer {
-    grid-area: footer;
-    background-color: brown;
 }
 
 .swiper {
@@ -225,3 +204,46 @@ footer {
     color: var(--color-white);
     margin-bottom: 10%;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    flex-wrap: wrap; /* para permitir que os elementos quebrem linha */
+}
+
+.center img {
+    margin-bottom: 15%;
+}
+
+.center div {
+    display: flex;
+    flex-direction: column; /* para posicionar o parágrafo abaixo da imagem */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 180px; /* ajuste a largura de acordo com suas necessidades */
+    color: var(--color-white);
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    background-color: brown;
+    color: var(--color-white);
+  }
+  
+  .about img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .text-about {
+    display: flex;
+    flex-direction: column;
+  }
+  
