@@ -35,14 +35,15 @@ body {
 
 .header,
 .navigation_header {
-    background-color: var(--color-dark2);
+    background-color: var(--color-dark1);
     display: flex;
     grid-area: header;
     flex-direction: row;
     align-items: center;
+    
 }
 .header {
-    box-shadow: 1px 1px 4px var(--color-dark4);
+    box-shadow: 1px 1px 4px var(--color-dark3);
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -77,7 +78,7 @@ body {
         position: fixed;
         flex-direction: column;
         top: 0;
-        background-color: var(--color-dark5);
+        background-color: var(--color-orange1);
         height: 50%;
         width: 35vw;
         padding: 1em;
@@ -260,6 +261,70 @@ background: url(logo.png);
     border-radius: 4px 4px 12px 4px;
     margin-top: -10%;
     cursor: pointer;
-    margin-left: 90%;
+    margin-left: 80%;
+}
+
+.foods {
+    border-left: 4px solid var(--color-white);
+    border-left-width: 4px; /* define o tamanho da borda esquerda */
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid var(--color-white);
+    padding: 10px; /* adicione um padding para evitar que o conteúdo encoste na borda */
+    border-top-left-radius: 60px; /* define o raio da curvatura da borda superior esquerda */
+    border-bottom-right-radius: 30px; /* define o raio da curvatura da borda inferior direita */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* adiciona uma transição suave de 0,3 segundos para as propriedades transform e box-shadow */
+    background-color: #000;
+    background-image: radial-gradient(ellipse at center, #4e4e4e 0%, #000000 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.foods:hover {
+    transform: scale(1.1); /* aumenta a escala da div em 10% ao passar o mouse sobre ela */
+    box-shadow: 0px 0px 10px var(--color-orange1); /* adiciona uma sombra laranja à div */
 }
   
+@media (min-width: 768px) {
+    .foods {
+      width: 160px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .foods {
+      width: 350px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .foods {
+      width: 350px;
+    }
+  }
+
+  .btn_order {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .teste1 {
+    display: flex;
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .teste1 p {
+    margin-left: 5%; /* Ajuste o valor conforme necessário */
+  }
+
+  .btn_order1 {
+    background-color: var(--color-orange1);
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    color: var(--color-white);
+}
