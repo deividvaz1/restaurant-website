@@ -6,7 +6,7 @@
     --color-dark2: #2d2d2d;
     --color-dark3: #414141;
     --color-orange1: #F4511F;
-    --color-dark4: #161a1b;
+    --color-dark4: #061418;
     --color-dark5: #343434;
     --color-purple: #b040ff;
 }
@@ -41,7 +41,6 @@ body {
     grid-area: header;
     flex-direction: row;
     align-items: center;
-
 }
 
 .header {
@@ -84,7 +83,8 @@ body {
         position: fixed;
         flex-direction: column;
         top: 0;
-        background-color: var(--color-orange1);
+        background-color: var(--color-dark1);
+        box-shadow: 1px 1px 4px var(--color-dark3);
         height: 50%;
         width: 35vw;
         padding: 1em;
@@ -131,7 +131,6 @@ body {
     height: 45em;
     display: flex;
     align-items: center;
-
 }
 
 .card {
@@ -157,7 +156,6 @@ body {
     width: 20em;
     height: 20em;
     border-radius: 50%;
-
 }
 
 .card_image img {
@@ -208,7 +206,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-
 }
 
 .btn_order {
@@ -229,7 +226,6 @@ body {
     align-items: center;
     gap: 250px;
     flex-wrap: wrap;
-    /* para permitir que os elementos quebrem linha */
     margin-bottom: 7%;
 }
 
@@ -240,34 +236,14 @@ body {
 .center div {
     display: flex;
     flex-direction: column;
-    /* para posicionar o parágrafo abaixo da imagem */
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 180px;
-    /* ajuste a largura de acordo com suas necessidades */
     color: var(--color-white);
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 200px;
-    background-color: brown;
-    color: var(--color-white);
-}
 
-.about img {
-    height: 400px;
-    width: 400px;
-}
-
-.text-about {
-    display: flex;
-    flex-direction: column;
-}
 
 .food_btn {
     display: flex;
@@ -369,3 +345,28 @@ body {
     text-shadow: 1px 1px #333;
   }
   
+  .infos {
+    color: aliceblue; 
+    display: flex; 
+    justify-content: space-around; 
+    font-size: 35px; 
+    gap: 5%; 
+    margin-bottom: 5%; 
+    flex-direction: row;
+  }
+
+    @media only screen and (max-width: 768px) {
+    #outros-servicos {
+      font-size: 25px;
+    }
+
+    .center div {
+      width: 45%;
+      margin-bottom: -25%;
+    }
+
+    .infos {
+        margin-bottom: 15%;
+        margin-top: 30%;
+    }
+  }
