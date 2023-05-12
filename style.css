@@ -64,6 +64,54 @@ body {
     background-color: var(--color-orange1);
     padding: 10px;
     border-radius: 2em;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: none;
+}
+
+.conteudo-modal {
+margin: 0 auto;
+margin-top: 3%;
+max-width: 600px;
+background-color: var(--color-orange1);
+border-radius: 8px;
+
+}
+
+.cabecalho-modal{
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #eee 1px;
+}
+
+.cabecalho-modal .h1modal {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cabecalho-modal .modal-fechar {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.corpo-modal{
+    padding: 1px 8px 8px 8px;
+    width: 100%;
+}
+
+.rodape-modal {
+    border-top: solid #eee 1px ;
+    padding: 8px;
 }
 
 .btn_icon_header {
@@ -85,7 +133,7 @@ body {
         top: 0;
         background-color: var(--color-dark1);
         box-shadow: 1px 1px 4px var(--color-dark3);
-        height: 50%;
+        height: 40%;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
@@ -118,6 +166,8 @@ body {
 
 }
 
+
+
 /*FIM - CSS HEADER*/
 
 /*CSS - SWIPER E INÍCIO*/
@@ -136,7 +186,7 @@ body {
 .card {
     width: 25em;
     height: 90%;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2em 1em;
@@ -188,7 +238,7 @@ body {
 
 .card_btn {
     background-color: var(--color-orange1);
-    color: #fff;
+    color: var(--color-white);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -244,11 +294,24 @@ body {
 }
 
 
+.splash {
+    color: aliceblue; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+@media (max-width: 768px) {
+    .splash {
+      margin-top: 30%;
+    }
+  }
 
 .food_btn {
     display: flex;
     background-color: var(--color-orange1);
-    color: #fff;
+    color: var(--color-white);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -287,15 +350,16 @@ body {
     /* adiciona uma sombra laranja à div */
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .foods {
-        width: 160px;
+        width: 260px;
     }
 }
 
+
 @media (min-width: 992px) {
     .foods {
-        width: 350px;
+        width: 250px;
     }
 }
 
@@ -341,19 +405,37 @@ body {
     justify-content: center;
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: white;
+    color: var(--color-white);
     text-shadow: 1px 1px #333;
   }
   
-  .infos {
-    color: aliceblue; 
-    display: flex; 
-    justify-content: space-around; 
-    font-size: 35px; 
-    gap: 5%; 
-    margin-bottom: 5%; 
-    flex-direction: row;
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark1);
+    padding: 50px;
   }
+  
+  .about-us-text {
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .about-us-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-white);
+  }
+  
+  .about-us-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--color-white);
+  } 
+  
+  
 
     @media only screen and (max-width: 768px) {
     #outros-servicos {
@@ -365,8 +447,4 @@ body {
       margin-bottom: -25%;
     }
 
-    .infos {
-        margin-bottom: 15%;
-        margin-top: 30%;
-    }
   }

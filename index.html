@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,11 +38,31 @@
       <a href="#">Início</a>
       <a href="#outros-servicos">Serviços</a>
       <a href="#cardapio">Cardápio</a>
-      <a href="#">Novidades</a>
-      <a href="#" class="active">Suporte</a>
+      <a href="#" class="active" onclick="abrir('vis-modal')">Suporte</a>
+
+      
+      <div id="vis-modal" class="modal">
+        <div class="conteudo-modal">
+          <div class="cabecalho-modal">
+            <h1 class="h1modal">ABRIR MODAL</h1>
+            <span class="modal-fechar" onclick="fechar('vis-modal')">X</span>
+    
+          </div>
+    
+          <div class="corpo-modal">
+              <p>TELELELELELELELELELTWNGSDFHPO SNDMHPDSMGHP DSGMH SDPKHLMSDGHP</p>
+          </div>
+    
+          <div class="rodape-modal">
+            <button  class="active" onclick="fechar('vis-modal')">fechar</button>
+          </div>
+    
+        </div>
+      </div>
     </div>
   </div>
-
+  
+  
   <div class="swiper mySwiper" tabindex="0" onclick="closeSidebar()" id="swiper">
     <div class="swiper-wrapper">
 
@@ -126,28 +145,18 @@
       <h1 style="font-size: 19px;">Comida Saborosa</h1>
       <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
     </div>
-  </div>
-
-  <div
-    class="infos">
     <div>
-      <h1 style="font-size: 40px; ">SOBRE NÓS</h1>
-      <p style="font-size: 20px;">Sit esse quis itaque ut enim<br> asperiores illum, quo<br> delectus nulla, totam
-        ex<br>
-        similique numquam? Facere,<br> officiis? Debitis tempore<br> consequatur dolor dolorum.</p>
-    </div>
-    <div style="margin-left: -10%;">
-      <img src="/assets/about-img-pizza.png" height="160px" alt="">
+      <img src="/assets/customer-service1.png" alt="">
+      <h1 style="font-size: 19px;">Atendimento 24h</h1>
+      <p>Lorem ipsum dolor<br> sit amet consectetur.</p>
     </div>
   </div>
 
-
-  <div style="color: aliceblue; display: flex; justify-content: center; align-items: center; flex-direction: column; ">
+  <div class="splash">
     <div id="cardapio" class="cardapio">
       <span style="font-weight: 400; font-size: 35px;">Especial do Chef</span><br><br><br><br>
     </div>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 2%;">
-
       <div class="foods" style="text-align: center;">
         <img src="/assets/pizza.png" alt="">
         <h1 style="font-size: 20px;">Pizza Napolitana</h1>
@@ -226,47 +235,18 @@
     </div>
   </div>
   
-  <div style="color: aliceblue; display: flex; flex-direction: column; align-items: center;">
-    <div style="margin-bottom: 3%;">
-      <h1>RECÉM-CHEGADOS</h1>
+
+  <section class="about-us">
+    <div class="about-us-text">
+      <h1>Sobre Nós</h1>
+      <p>Sit esse quis itaque ut enim asperiores illum, quo delectus nulla, totam similique numquam? Facere, officiis? Debitis tempore consequatur dolor dolorum.</p>
     </div>
+  </section>
   
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 20px;">
 
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 20px;">
+  
+ <script src="/src/modal.js"></script>
 
-        <div style="text-align: start;">
-          <p class="new">NEW 1</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-  
-        <div style="text-align: start;">
-          <p class="new">NEW 2</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-  
-        <div style="text-align: start;">
-          <p class="new">NEW 3</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-  
-        <div style="text-align: start;">
-          <p class="new">NEW 4</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-  
-        <div style="text-align: start;">
-          <p class="new">NEW 5</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-  
-        <div style="text-align: start;">
-          <p class="new">NEW 6</p>
-          <img src="/assets/new1-img 3.png" alt="">
-        </div>
-
-    </div>
-  </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
@@ -280,5 +260,6 @@
 </body>
 <script src="/src/header.js">
 </script>
+
 
 </html>
