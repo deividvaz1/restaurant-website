@@ -40,9 +40,11 @@ git clone https://github.com/deividvaz1/Projeto-NLW.git
 -  Em seguida, inicie o Apache e o phpMyAdmin e crie um banco de dados. Após isso, crie as tabelas necessárias conforme apresentadas no arquivo "restaurante.php" a partir da linha 6.
 -  No arquivo "config.php", faça as alterações necessárias para estabelecer a conexão com o banco de dados.
 
-## 🔖 Layout
+## 🔖 Layout e Exibição
 
-
+<div align="center">
+<img src="/assets/Layout-video.gif" width="1920" height="720">
+</div>
 
 
 Você também pode visualizar o layout original do projeto através do link abaixo (é necessário ter uma conta do Figma):
