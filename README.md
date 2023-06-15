@@ -17,7 +17,7 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Front-End:
-- HTML | CSS | TailwindCSS | JavaScript 
+- HTML | CSS | JavaScript 
 
 Back-End:
 - PHP | MySQL | phpMyAdmin 
